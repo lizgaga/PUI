@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    color: pink;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*********** HEADER ************/
+header {
+    padding: 10px;
+    background-color: grey;
+    color: pink;
+    font-family: 'Roboto', sans-serif;
+}
+
+header a {
+    float: center;
+    color: goldenrod;
+    text-align: right;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* header a {
+    color: gold;
+    text-decoration: none;
+} */
+
+.list a {
+    color: pink;
+    text-decoration: none;
+}
+
+/*********** LISTS ************/
+#todo-lists {
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 10px;
+}
+
+.list {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+
+}
+
+.list-title {
+    margin-left: 20px;
+}
+
+.pphBanner {
+    width:100%; 
+    height:40px; 
+    background:#000000; 
+    display: inline-block;
+}
+
+
+
