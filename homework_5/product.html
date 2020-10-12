@@ -54,8 +54,8 @@
 		
 		<br></br>
         
-        <div id="product">
-
+        <div class="product">
+            <h3>Product Specification</h3>
             <div class="product__details__pic__left product__thumb nice-scroll">
                 <a class="pt active" href="#product-1">
                     <img src="images/spec1 copy.jpeg" alt="">
@@ -73,31 +73,84 @@
             <div class="product__preview">
 				<img data-hash="product-1" class="product__big__img" src="images/spec3.jpeg" alt="">
             </div> 
-
+       
             <div class="product__details__text">
-                <div>
-                    <a href="index.html">Link here</a>
-                </div>
-                <!-- <h3>Morning Haze Couch Pillow</h3> -->
-                
-                <!-- <div class="product__details__price">$ 75.0 <span>Now 15% off!</span></div>
+                <h3>Morning Haze Couch Pillow</h3>
+                <div class="product__details__price">$22.99 <span>Now 15% off!</span></div>
                 <p>Designed by Emerald Fairfield, Morning Haze ties together a blend of all the mornings 
-                        Fairfield observes from her window</p>
+                    Fairfield observes from her window</p>
+
+                <div class="colorpicker">
+                    &nbsp;&nbsp;&nbsp;Colors:
+                    <div class="color__checkbox">
+                            <label for="red">
+                                <input type="radio" name="color__radio" id="red" checked>
+                                <span class="checkmark"></span>
+                                Morning Haze
+                            </label>
+                            <label for="black">
+                                <input type="radio" name="color__radio" id="black">
+                                <span class="checkmark black-bg"></span>
+                                Rainy Day
+                            </label>
+                            <label for="grey">
+                                <input type="radio" name="color__radio" id="grey">
+                                <span class="checkmark grey-bg"></span>
+                                Cozy Denim
+                            </label>
+                    </div>
+            
+                </div>
+                <br>
+                </br>
+                <div class="sizepicker">
+                    &nbsp;&nbsp;&nbsp;Size:
+			        <select id="size" name="size">
+  				        <option value="15x15">15 x 15</option>
+  				        <option value="18">18 x 15</option>
+ 				        <option value="20">20 x 18</option>
+				    </select>
+
+
+                </div>
+                <br>
+                </br>
+                <div class="materialpicker">
+                    &nbsp;&nbsp;&nbsp;Material:
+			        <select id="material" name="material">
+  				        <option value="memory">Memory Foam</option>
+  				        <option value="duck">Duck Down</option>
+ 				        <option value="hypo">Hypoallergenic Poly-bend</option>
+				    </select>
+
+
+                </div>
+                <br>
+                </br>
                 <div class="product__details__button">
-                    <span>Quantity:</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>Quantity:</span>
                     <input type="button" value="-" class="minus">
                     <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
                     <input type="button" value="+" class="plus">
                 </div>
+                <br>
+                </br>
                 <div>
-                    <a href="#" class="cart-btn"></span> Add to cart</a>
-                </div> -->
-            </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="document.location='product.html'">Add to Cart</button>
+                </div>
+            </div> 
                     
         </div>
 
 
         </div>
+
+        <div id="picture">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="images/picturenow.png" width=100% height=100%/>
+		</div>
 
 
 
