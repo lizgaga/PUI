@@ -1,6 +1,7 @@
+
 body {
-    margin: 0;
-    color: teal;
+    margin: 5;
+    color: grey;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -9,25 +10,697 @@ body {
 header {
     text-align: center;
     padding: 10px;
-    background-color: teal;
-    color: white;
+    background-color: gainsboro;
+    color: black;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    color: black;
     font-family: 'Roboto Slab', serif;
+    font-size: 24px;
 }
 
 h1 {
     margin: 0;
 }
+h2 {
+    margin-left: 25px;
+}
+h3 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: 'Roboto Slab', serif;
+}
+
+h4 {
+    color: rgb(196, 95, 112);
+    margin-left: 50px;
+    font-size: 36px;
+    font-family: 'Tangerine', serif;
+    margin-bottom: 0;
+}
+
+h6 {
+    color: black;
+    margin-top:0;
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+#logo {
+    text-align: left;
+    color: black;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    display: inline-block;
+    width: 60%;
+}
+#flag {
+    text-align: right;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    display: inline-block;
+}
+#search {
+    text-align: right;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    display: inline-block;
+}
+#cart {
+    text-align: right;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    display: inline-block;
+}
+
+
+/*********** SALE **************/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 50%;
+    padding: 0px;
+}
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row3 {
+    padding-bottom:20%;
+}
+/***********STYLES *************/
+.content {
+    float: left;
+    width: 22%;
+    padding: 10px;
+    margin-left: 15px;
+    top: 50%;
+    left: 50%;
+}
+  
+p {text-align: center;}
+
+
+/***********Shop Page*************/
+.step1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    margin-left: 15px;
+    top: 50%;
+    left: 50%;
+}
+.p2 {
+    float: left;
+    text-align: left;
+    margin-left: 18%;
+    color: black;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(51, 13, 189);
+    border-radius: 50%;
+    display: inline-block;
+  }
+.reddot {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(207, 4, 4);
+    border-radius: 50%;
+    display: inline-block;
+  }
+.step2 {
+    width: 25%;
+    padding: 10px;
+    display: inline-block;
+    transform: translate(-10%, -10%);
+}
+.Morning {
+    float: center;
+    text-align: center;
+    margin-left: 10%;
+    color: red;
+}
+.Rainy {
+    float: center;
+    text-align: center;
+    margin-left: 10%;
+    color: rgb(0, 195, 255);
+}
+.Cozy {
+    float: center;
+    text-align: center;
+    margin-left: 10%;
+    color: rgb(27, 32, 100);
+}
+
+
+
+
+
+#cars {
+    color: black;
+
+}
+
+
+.product {
+    width: 400px;
+    height: 574px;    
+    border-style: solid;
+    border-color: red;
+    display: inline-block;
+
+}
+
+.product__details__pic__left {
+    width: 300px;
+    height: default;
+	max-height: 574px;
+    display: inline-block;	
+    overflow-y: auto;
+}
+
+.product__details__pic__left .pt {
+	display: block;
+	cursor: pointer;
+	position: relative;
+}
+
+.product__details__pic__left .pt.active::after {
+	opacity: 0.3;
+}
+
+.product__details__pic__left .pt img {
+	min-width: 100%;
+}
+
+.product__preview {
+    display: inline-block;
+    margin-left: 20px;
+    width: 350px;
+    height: 574px;
+    border-style: solid;
+
+}
+
+.product__details__text {
+    width: 50%;
+    height: 570px;
+    display: inline-block;
+    border-style: solid;
+
+
+}
+/* .product__details__text h3 {
+    color: #0a0a0a;
+    font-size: 30;
+}
+
+
+
+.product__details__text p {
+	color: #444444;
+}
+
+.product__details__price {
+	font-size: 24px;
+	font-weight: 600;
+    color: pink;
+    text-align: center;
+}
+
+.product__details__price span {
+	font-size: 18px;
+	color: #b1b0b0;
+	text-decoration: wavy;
+}
+
+.product__details__button {
+    text-align: center;
+
+
+}
+ */
+
 
 /*********** LISTS ************/
+/* 
+.product {
+    width: 1000px;
+    height: 1000px;
+    background-color: blue;
+    border-style: solid;
+    border-color: red;
+
+}
+.product__details__pic {
+    overflow: hidden;
+    display: inline-block;
+    width: default;
+    border-style: solid;
+}
+
+.product__details__pic__left {
+    width: default;
+    height: default;
+	max-height: 574px;
+	float: center;
+	overflow-y: auto;
+}
+
+.product__details__pic__left .pt {
+	display: block;
+	cursor: pointer;
+	position: relative;
+}
+
+.product__details__pic__left .pt.active::after {
+	opacity: 0.3;
+}
+
+
+
+.product__details__pic__left .pt img {
+	min-width: 100%;
+}
+
+.product__preview {
+    display: inline-block;
+    margin-left: 20px;
+    width: 350px;
+    height: 570px;
+    border-style: solid;
+}
+
+.product__details__text {
+    margin-left: 40px;
+    margin-top: -20px;
+    width: 40%;
+    height: 570px;
+    display: inline-block;
+    border-style: solid;
+
+
+}
+.product__details__text h3 {
+    color: #0a0a0a;
+    font-size: 30;
+    float:center;
+}
+
+
+
+.product__details__text p {
+	color: #444444;
+    float: right;
+}
+
+.product__details__price {
+	font-size: 24px;
+	font-weight: 600;
+    color: pink;
+    text-align: center;
+}
+
+.product__details__price span {
+	font-size: 18px;
+	color: #b1b0b0;
+	text-decoration: wavy;
+}
+
+.product__details__button {
+    text-align: center;
+    margin-bottom: 400px;
+
+
+}
+.quantity {
+    display: inline-block;
+}
+   
+.quantity.input-text.qty {
+    width: 35px;
+    height: 39px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+   }
+   
+.quantity.buttons_added {
+    display: inline-block;
+    text-align: left;
+    position: center;
+    white-space: nowrap;
+    vertical-align: top; 
+}
+   
+.quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+   }
+   
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+    padding: 7px 10px 8px;
+    height: 41px;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor:pointer;
+}
+   
+.quantity.buttons_added .minus {
+    border-right: 0; }
+   
+.quantity.buttons_added .plus {
+    border-left: 0; }
+   
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+    background: #eeeeee; }
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     margin: 0; }
+     
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+     outline: none; } */
+
+
+
+
+
+
+
+
+/* .quantity {
+    color: black;
+    text-align: center;
+	float: right;
+	margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative; 
+    top: -525px;
+    
+}
+
+.quantity>span {
+	font-size: 14px;
+	color: #111111;
+	font-weight: 600;
+	float: left;
+	margin-top: 14px;
+	margin-right: 15px;
+}
+
+.pro-qty {
+	height: 50px;
+	width: 150px;
+	border: 1px solid #ebebeb;
+	border-radius: 50px;
+	padding: 0 20px;
+    overflow: visible;
+    float: center;
+    margin-left: 80px;
+    margin-bottom: 200px;
+
+}
+
+.pro-qty .qtybtn {
+	font-size: 14px;
+	color: #666666;
+	cursor: pointer;
+	float: left;
+	width: 12px;
+    line-height: 46px;
+    margin-top: 50%;
+
+}
+
+.pro-qty input {
+	font-size: 14px;
+	color: #666666;
+	font-weight: 500;
+	border: none;
+    float: right;
+    margin-bottom: 200px;
+    width: 84px;
+	text-align: center;
+	height: 48px;
+} */
+
+.product__details__button {
+	overflow: hidden;
+    margin-bottom: 25px;
+    float:right;
+}
+
+.product__details__button .cart-btn {
+	font-size: 14px;
+	color: #ffffff;
+	background: pink;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 14px 30px 15px;
+	border-radius: 50px;
+	float: right;
+	margin-right: 20px;
+    margin-bottom: 90px;
+
+}
+
+.product__details__button ul {
+	float: right;
+}
+
+.product__details__button ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.product__details__button ul li:last-child {
+	margin-right: 0;
+}
+
+.product__details__button ul li a {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border: 1px solid #ebebeb;
+	border-radius: 50%;
+	line-height: 50px;
+	text-align: right;
+	padding-top: 1px;
+}
+
+.product__details__button ul li a span {
+	font-size: 18px;
+	color: #666666;
+}
+
+.product__details__widget {
+	border-top: 1px solid #ebebeb;
+	padding-top: 35px;
+}
+
+.product__details__widget ul li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.product__details__widget ul li:last-child {
+	margin-bottom: 0;
+}
+
+.product__details__widget ul li span {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	color: #111111;
+	width: 150px;
+	float: left;
+}
+
+.product__details__widget ul li .stock__checkbox {
+	overflow: hidden;
+}
+
+.product__details__widget ul li .stock__checkbox label {
+	display: block;
+	padding-left: 20px;
+	font-size: 14px;
+	color: #666666;
+	position: relative;
+	cursor: pointer;
+}
+
+.product__details__widget ul li .stock__checkbox label input {
+	position: absolute;
+	visibility: hidden;
+}
+
+.product__details__widget ul li .stock__checkbox label input:checked~.checkmark {
+	border-color: #ca1515;
+}
+
+.product__details__widget ul li .stock__checkbox label input:checked~.checkmark:after {
+	border-color: #ca1515;
+	opacity: 1;
+}
+
+.product__details__widget ul li .stock__checkbox label .checkmark {
+	position: absolute;
+	left: 0;
+	top: 5px;
+	height: 10px;
+	width: 10px;
+	border: 1px solid #444444;
+	border-radius: 2px;
+}
+
+.product__details__widget ul li .stock__checkbox label .checkmark:after {
+	position: absolute;
+	left: 0px;
+	top: -2px;
+	width: 11px;
+	height: 5px;
+	border: solid #ffffff;
+	border-width: 1.5px 1.5px 0px 0px;
+	-webkit-transform: rotate(127deg);
+	-ms-transform: rotate(127deg);
+	transform: rotate(127deg);
+	opacity: 0;
+	content: "";
+}
+
+.product__details__widget ul li .color__checkbox label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	margin-right: 20px;
+}
+
+.product__details__widget ul li .color__checkbox label.active input~.checkmark:after {
+	border-color: #ffffff;
+	opacity: 1;
+}
+
+.product__details__widget ul li .color__checkbox label:last-child {
+	margin-right: 0;
+}
+
+.product__details__widget ul li .color__checkbox label input {
+	position: absolute;
+	visibility: hidden;
+}
+
+.product__details__widget ul li .color__checkbox label input:checked~.checkmark:after {
+	border-color: #ffffff;
+	opacity: 1;
+}
+
+.product__details__widget ul li .color__checkbox label .checkmark {
+	position: absolute;
+	left: 0;
+	top: -10px;
+	height: 20px;
+	width: 20px;
+	background: #e31e2f;
+	border-radius: 50%;
+	content: "";
+}
+
+.product__details__widget ul li .color__checkbox label .checkmark.black-bg {
+	background: #111111;
+}
+
+.product__details__widget ul li .color__checkbox label .checkmark.grey-bg {
+	background: #e4aa8b;
+}
+
+.product__details__widget ul li .color__checkbox label .checkmark:after {
+	position: absolute;
+	left: 3px;
+	top: 5px;
+	width: 13px;
+	height: 6px;
+	border: solid #ffffff;
+	border-width: 1.5px 1.5px 0px 0px;
+	-webkit-transform: rotate(127deg);
+	-ms-transform: rotate(127deg);
+	transform: rotate(127deg);
+	opacity: 0;
+	content: "";
+}
+
+.product__details__widget ul li .size__btn label {
+	font-size: 14px;
+	color: #666666;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-right: 10px;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.product__details__widget ul li .size__btn label:last-child {
+	margin-right: 0;
+}
+
+.product__details__widget ul li .size__btn label.active {
+	color: #ca1515;
+}
+
+.product__details__widget ul li .size__btn label input {
+	position: absolute;
+	visibility: hidden;
+}
+
+.product__details__widget ul li p {
+	margin-bottom: 0;
+	color: #666666;
+}
+
+
+
+
 #todo-lists {
     margin: 0 auto;
-    width: 80%;
-    padding-top: 10px;
+    width: 100%;
+    padding-top: 0px;
 }
 
 .list {
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
 .list-title {
@@ -35,20 +708,20 @@ h1 {
 }
 
 header a {
-    color: gold;
+    color: black;
     text-decoration: none;
 }
 
 .list {
-    background-color: #eee;
+    background-color: rgb(134, 32, 32);
     border: 1px solid #ccc;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .list a {
-    text-decoration: none;
-    color: teal;
+    background-color: white;
+    color:rgb(134, 32, 32);
 }
 
 .list-title {
@@ -58,12 +731,14 @@ header a {
 }
 
 button {
+    float: right;
     border-radius: 10px;
+    text-align: center;
     background-color: white;
-    border: 1px solid teal;
+    border: 1px solid pink;
     padding: 10px;
-    color: teal;
-    font-size: 0.8em;
+    color: pink;
+    font-size: 1.2em;
 }
 
 input {
