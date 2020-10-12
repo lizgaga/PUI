@@ -1,0 +1,372 @@
+
+body {
+    margin: 5;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*********** HEADER ************/
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: gainsboro;
+    color: black;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+}
+
+h1 {
+    margin: 0;
+}
+h2 {
+    margin-left: 25px;
+}
+h3 {
+    text-align: center;
+    color: grey;
+    font-size: 24px;
+    font-family: 'Roboto Slab', serif;
+}
+
+h4 {
+    color: rgb(196, 95, 112);
+    margin-left: 50px;
+    font-size: 36px;
+    font-family: 'Tangerine', serif;
+    margin-bottom: 0;
+}
+
+h6 {
+    color: black;
+    margin-top:0;
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+h5 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto Slab', serif;
+}
+#logo {
+    text-align: left;
+    color: black;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    display: inline-block;
+    width: 60%;
+}
+#flag {
+    text-align: right;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    display: inline-block;
+}
+#search {
+    text-align: right;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    display: inline-block;
+}
+#cart {
+    text-align: right;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    display: inline-block;
+}
+
+
+/*********** SALE **************/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 50%;
+    padding: 0px;
+}
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row3 {
+    padding-bottom:20%;
+}
+/***********STYLES *************/
+.content {
+    float: left;
+    width: 22%;
+    padding: 10px;
+    margin-left: 15px;
+    top: 50%;
+    left: 50%;
+}
+  
+p {text-align: center;}
+
+
+/***********Shop Page*************/
+.step1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    margin-left: 15px;
+    top: 50%;
+    left: 50%;
+}
+.p2 {
+    float: left;
+    text-align: left;
+    margin-left: 18%;
+    color: black;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(51, 13, 189);
+    border-radius: 50%;
+    display: inline-block;
+  }
+.reddot {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(207, 4, 4);
+    border-radius: 50%;
+    display: inline-block;
+  }
+.step2 {
+    width: 25%;
+    padding: 10px;
+    display: inline-block;
+    transform: translate(-10%, -10%);
+}
+.Morning {
+    float: center;
+    text-align: center;
+    margin-left: 10%;
+    color: red;
+}
+.Rainy {
+    float: center;
+    text-align: center;
+    margin-left: 10%;
+    color: rgb(0, 195, 255);
+}
+.Cozy {
+    float: center;
+    text-align: center;
+    margin-left: 10%;
+    color: rgb(27, 32, 100);
+}
+
+
+
+
+
+#cars {
+    color: black;
+
+}
+
+
+.product {
+    width: 100%;
+    height: 800px;    
+
+
+}
+
+.product__details__pic__left {
+    margin-left: 40px;
+    width: 300px;
+    height: default;
+	max-height: 574px;
+    float: left;    
+    overflow-y: auto;
+}
+
+.product__details__pic__left .pt {
+	display: block;
+	cursor: pointer;
+	position: relative;
+}
+
+.product__details__pic__left .pt.active::after {
+	opacity: 0.3;
+}
+
+.product__details__pic__left .pt img {
+	min-width: 100%;
+}
+
+
+.product__preview {
+    float: left;    
+    margin-left: 40px;
+    width: 350px;
+    height: 574px;
+
+}
+
+/* .product__right {
+    margin-left: 80px;
+    display: inline-block;
+    width: 500px;
+    height: 574px;
+    border-style: solid;
+} */
+.product__details__text {
+    width: 45%;
+    height: 574px;
+    float: left;
+}
+
+.product__details__text h3 {
+    color: black;
+    font-size: 30;
+    float: center
+}
+.product__details__text p {
+	color: black;
+}
+
+.product__details__price {
+	font-size: 24px;
+	font-weight: 600;
+    color: pink;
+    text-align: center;
+}
+
+.product__details__price span {
+	font-size: 18px;
+	color: #b1b0b0;
+	text-decoration: wavy;
+}
+.product__details__button {
+	overflow: hidden;
+    float:center;
+    margin-left: 100px;
+}
+
+.product__details__button .cart-btn {
+    font-size: 14px;
+    float: center;
+	color: #ffffff;
+	background: pink;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	border-radius: 50px;
+	margin-left: 50px;
+    margin-bottom: 90px;
+    margin-bottom: 330px;
+}
+
+
+
+.colorpicker {
+	border-top: 1px solid #ebebeb;
+	padding-top: 35px;
+}
+
+.colorpicker ul li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.colorpicker ul li:last-child {
+	margin-bottom: 0;
+}
+
+.colorpicker ul li span {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	color: #111111;
+	width: 150px;
+	float: left;
+}
+.colorpicker__checkbox label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	margin-right: 20px;
+}
+
+
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+.list {
+    background-color: rgb(134, 32, 32);
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+.list a {
+    background-color: white;
+    color:rgb(134, 32, 32);
+}
+
+.list-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+button {
+    float: center;
+    margin-left: 200px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid pink;
+    padding: 10px;
+    color: pink;
+    font-size: 1.2em;
+}
+
+
+input {
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+button:disabled {
+    filter: brightness(.9);
+    background-color: lightgray;
+    color: white;
+    border: none;
+}
