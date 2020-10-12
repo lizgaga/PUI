@@ -4,4 +4,4 @@
 
 #Link to the github pages: lizgaga.github.io/PUI/homework_5
 
-#Link to the github repository: github.com/lizgaga/PUI/homework_5
+#Link to the github repository: github.com/lizgaga/PUI
