@@ -1,4 +1,7 @@
-function addNewList() {
+// Sample Javascript file from Lab as model
+
+
+/* function addNewList() {
     alert('hi class!');
     console.log('hi class!');
 }
@@ -37,3 +40,4 @@ function addListItem() {
     newItem.appendChild(document.createTextNode(itemText.value));
     list.appendChild(newItem);
 }
+ */
