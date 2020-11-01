@@ -1,3 +1,6 @@
+
+
+
 function PillowTemplate(parentEl, headerText, bodyText, imgUrl) {
     // to fill in
     let divContainer = document.createElement("div");
