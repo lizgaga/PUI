@@ -6,11 +6,11 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 		<!--Javascript-->
-		<script src="main.js" type="text/javascript"></script>
+		<!-- <script src="main.js" type="text/javascript"></script> -->
 	<title>Fluff Stuff</title>
 		<meta charset="UTF-8">
 	</head>
-	<body>
+	<body onload = "loadCart();">
         <!--Header-->
 		<header>
 			<br>
@@ -21,33 +21,33 @@
 			</div>
 
 			<div id="flag">
-				<img src="images/flag.jpg" width="40" height="30"/>
-				&nbsp;&nbsp;
-				<a>Eng</a>
+				<img src="images/flag.jpg"/>
+                <a>Eng</a>
+                <img src="images/selectionarrow.png"/>
 			</div>
-			&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			|
 
 			<div id="search">
-				<img src="images/magnify.png" width="35" height="35"/>
-				&nbsp;&nbsp;
+                <img src="images/magnify.png"/>
 				<a>Search</a> 
 			</div>
-			&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
+			|
+            
 			<div id="cart">
-				<img src="images/cart-variant.png" width="35" height="35"/>
-				<a>(0 items)</a>
+				<a href = "cart.html"><img src="images/cart-variant.png" onclick = "loadCart()"/></a>
+                (<a id="cartnum"></a> items)
 			</div>
 			
 			<br>
+			</br>
 			<nav>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="index.html">Home</a>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="shop.html">Shop</a>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="sale.html">Sale</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="aboutus.html">About Us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="locations.html">Locations</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="index.html">Home</a>   
+				<a href="shop.html">Shop</a>  
+				<a href="sale.html">Sale</a> 
+				<a href="aboutus.html">About Us</a> 
+				<a href="locations.html">Locations</a> 
 			</nav>
+
 		</header>
 		
 		<br>
@@ -69,39 +69,52 @@
                 </a>
             </div>   
             <div class="product__preview">
-				<img data-hash="product-1" class="product__big__img" src="images/spec3.jpeg" alt="">
+				<img data-hash="product-1" class="product__big__img" id = "img-bulb" src="images/spec3.jpeg" alt="">
             </div> 
             <!--Description on right-->
             <div class="product__details__text">
-                <h3>Morning Haze Couch Pillow</h3>
+                <h3 id = "shorttitle">Morning Haze Couch Pillow</h3>
                 <div class="product__details__price">$22.99 <span>Now 15% off!</span></div>
-                <p>Designed by Emerald Fairfield, Morning Haze ties together a blend of all the mornings 
+                <p id= "shortdesc">Designed by Emerald Fairfield, Morning Haze ties together a blend of all the mornings 
                     Fairfield observes from her window</p>
                 <!--Choose Color-->
                 <div class="colorpicker">
-                    &nbsp;&nbsp;&nbsp;Colors:
+                    Colors:
                     <div class="color__checkbox">
-                            <label for="red">
-                                <input type="radio" name="color__radio" id="red" checked>
+                            <!-- <label for="red">
+                                <input type="radio" name="color__radio" value="red" checked>
                                 <span class="checkmark"></span>
                                 Morning Haze
                             </label>
                             <label for="black">
-                                <input type="radio" name="color__radio" id="black">
+                                <input type="radio" name="color__radio" value="black">
                                 <span class="checkmark black-bg"></span>
                                 Rainy Day
                             </label>
                             <label for="grey">
-                                <input type="radio" name="color__radio" id="grey">
+                                <input type="radio" name="color__radio" value="grey">
                                 <span class="checkmark grey-bg"></span>
                                 Cozy Denim
-                            </label>
+                            </label> -->
+                            
+                            <span class = "reddot" id="changetomorning"></span>
+                            <a class = "currentcolor">
+                                Morning Haze
+                            </a>
+                            <span class="dot" id="changetocozy"></span>
+                            <a class = "currentcolor">
+                                Cozy Denim
+                            </a>
+                            <span class="bluedot" id="changetorainy"></span>
+                            <a class = "currentcolor">
+                                Rainy Day
+                            </a>
                     </div>
                 </div>
                 <br>
 	            <!--Choose size-->
                 <div class="sizepicker">
-                    &nbsp;&nbsp;&nbsp;Size:
+                    Size:
 			        <select id="size" name="size">
   				        <option value="15x15">15 x 15</option>
   				        <option value="18">18 x 15</option>
@@ -113,27 +126,23 @@
                 <br>
                 <!--Choose material-->
                 <div class="materialpicker">
-                    &nbsp;&nbsp;&nbsp;Material:
+                    Material:
 			        <select id="material" name="material">
   				        <option value="memory">Memory Foam</option>
   				        <option value="duck">Duck Down</option>
  				        <option value="hypo">Hypoallergenic Poly-bend</option>
 				    </select>
-
-
                 </div>
                 <br>
                 <!--Choose quantity-->
                 <div class="product__details__button">
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span>Quantity:</span>
-                    <input type="button" value="-" class="minus">
-                    <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
-                    <input type="button" value="+" class="plus">
+                    <span>Quantity:</span>
+                    <input type="number" step="1" min="1" max="24" name="quantity" value="1" title="Qty" class="input-text qty text" id="quant" onchange = "getQuantity()">
                 </div>
                 <br>
                 <div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button onclick="document.location='product.html'">Add to Cart</button>
+                    
+                    <button id="addcart">Add to Cart</button>
                 </div>
             </div> 
                     
@@ -150,6 +159,6 @@
 
 
 
-
+        <script src="main.js"></script>
     </body>
 </html>

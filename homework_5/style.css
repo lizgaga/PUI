@@ -23,8 +23,13 @@ nav {
     font-family: 'Roboto Slab', serif;
     font-size: 24px;
 }
+nav a{
+    float: center;
+    width: 6.75%;
+    margin: 90px;
+}
 h1 {
-    margin: 0;
+    margin: 10px;
 }
 h2 {
     margin-left: 25px;
@@ -55,6 +60,17 @@ h5 {
     font-size: 24px;
     font-family: 'Roboto Slab', serif;
 }
+h7{
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    color: pink;
+}
+h8 {
+    color: rgb(255, 94, 0);
+    margin-left: 50%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
 #logo {
     text-align: left;
     color: black;
@@ -69,13 +85,33 @@ h5 {
     font-family: 'Roboto Slab', serif;
     font-size: 22px;
     display: inline-block;
+    margin-right: 20px;
+}
+#flag a{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#flag img[src="images/flag.jpg"]{
+    width: 40px;
+    height: 30px;
+    margin-bottom: -10px;
 }
 #search {
-    text-align: right;
+    text-align: end;
     color: black;
     font-family: 'Roboto Slab', serif;
     font-size: 22px;
     display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+#search img {
+    margin: auto;
+    float: left;
+    width: 35px;
+    height: 35px;
+    padding-right: 30px;
 }
 #cart {
     text-align: right;
@@ -83,9 +119,15 @@ h5 {
     font-family: 'Roboto Slab', serif;
     font-size: 22px;
     display: inline-block;
+    padding-left: 10px;
+    padding-right: 20px;
 }
 
+#cart a {
+    text-align: right;
+    color: black;
 
+}
 /*********** SALE **************/
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
@@ -143,6 +185,7 @@ p {text-align: center;}
     width: 25px;
     background-color: rgb(51, 13, 189);
     border-radius: 50%;
+    margin-left: 25px;
     display: inline-block;
   }
 .reddot {
@@ -150,8 +193,17 @@ p {text-align: center;}
     width: 25px;
     background-color: rgb(207, 4, 4);
     border-radius: 50%;
+    margin-left: 25px;
     display: inline-block;
   }
+.bluedot {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(101, 255, 229);
+    border-radius: 50%;
+    margin-left: 25px;
+    display: inline-block;
+}
 .step2 {
     width: 25%;
     padding: 10px;
@@ -225,7 +277,9 @@ p {text-align: center;}
     float: center
 }
 .product__details__text p {
-	color: black;
+    color: black;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
 }
 .product__details__price {
 	font-size: 24px;
@@ -257,10 +311,18 @@ p {text-align: center;}
     margin-bottom: 330px;
 }
 .colorpicker {
-	border-top: 1px solid #ebebeb;
-	padding-top: 35px;
+    padding-top: 0px;
+    display: inline-block;
 }
-
+.sizepicker {
+    padding-top: 15px;
+    display: inline-block;
+}
+.materialpicker {
+    padding-top: 15px;
+    display: inline-block;
+    padding-bottom: 15px;
+}
 .colorpicker ul li {
 	list-style: none;
 	margin-bottom: 10px;
@@ -285,6 +347,46 @@ p {text-align: center;}
 	margin-right: 20px;
 }
 
+
+/******* Cart Page **********/
+#cartitem {
+    background-color: rgb(248, 247, 247);
+    width: 85%;
+    height: 380px;
+    margin-left: 100px;
+    display: inline-block;
+    
+}
+#cartpicture img[src="images/pillow fall.jpeg"]{
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#itemtext {
+    width: 400px;
+    height: 300px;
+    transform: translate(400px, -280px);
+
+}
+#editbutton {
+    margin-top: 40px;
+    height: 400px;
+    color: black;
+    transform: translate(720px, -250px);
+}
+#promo {
+    margin-left: 200px;
+    transform: translate(0px, -100px);
+}
+#checkout {
+    float: center;
+    margin-left: 760px;
+    
+} 
+#totalprice {
+    transform: translate(400pxpx, -100px);
+}
 /***********Sample from Lab*************/
 header a {
     color: black;
@@ -298,6 +400,12 @@ header a {
     margin-top: 0px;
 }
 
+.salelist {
+    background-color: pink;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 0px;
+}
 .list a {
     background-color: white;
     color:rgb(134, 32, 32);
@@ -312,7 +420,7 @@ header a {
 /***********Buttons*************/
 button {
     float: center;
-    margin-left: 200px;
+    margin-left: 250px;
     border-radius: 10px;
     text-align: center;
     background-color: white;

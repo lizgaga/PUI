@@ -12,7 +12,7 @@
 	<title>Fluff Stuff</title>
 		<meta charset="UTF-8">
 	</head>
-	<body>
+	<body onload = "loadCart();">
 		<header>
 			<br>
 			<div id="logo">
@@ -22,32 +22,31 @@
 			</div>
 
 			<div id="flag">
-				<img src="images/flag.jpg" width="40" height="30"/>
-				&nbsp;&nbsp;
-				<a>Eng</a>
+				<img src="images/flag.jpg"/>
+                <a>Eng</a>
+                <img src="images/selectionarrow.png"/>
 			</div>
-			&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			|
 
 			<div id="search">
-				<img src="images/magnify.png" width="35" height="35"/>
-				&nbsp;&nbsp;
+                <img src="images/magnify.png"/>
 				<a>Search</a> 
 			</div>
-			&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
+			|
+            
 			<div id="cart">
-				<img src="images/cart-variant.png" width="35" height="35"/>
-				<a>(0 items)</a>
+				<a href = "cart.html"><img src="images/cart-variant.png"/></a>
+				(<a id="cartnum"></a> items)
 			</div>
 			
 			<br>
+			</br>
 			<nav>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="index.html">Home</a>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="shop.html">Shop</a>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="sale.html">Sale</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="aboutus.html">About Us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="locations.html">Locations</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="index.html">Home</a>   
+				<a href="shop.html">Shop</a>  
+				<a href="sale.html">Sale</a> 
+				<a href="aboutus.html">About Us</a> 
+				<a href="locations.html">Locations</a> 
 			</nav>
 
 		</header>
@@ -57,7 +56,7 @@
 			  <img src="images/redscreen.png" alt="Join" style="width:100%">
 			</div>
 			<div class="column">
-			  <img src="images/Salepillow.png" alt="Pillow" style="width:100%">
+			  <img src="images/salepillow.png" alt="Pillow" style="width:100%">
 			</div>
 	
 

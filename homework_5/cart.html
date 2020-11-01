@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+		<!--Javascript-->
+		
+	<title>Fluff Stuff</title>
+		<meta charset="UTF-8">
+	</head>
+	<body onload = "loadCart();">
+		<header>
+			<br>
+			<div id="logo">
+				<h1>
+					<a href="index.html">Fluff Stuff</a>
+				</h1> 
+			</div>
+
+			<div id="flag">
+				<img src="images/flag.jpg"/>
+                <a>Eng</a>
+                <img src="images/selectionarrow.png"/>
+			</div>
+			|
+
+			<div id="search">
+                <img src="images/magnify.png"/>
+				<a>Search</a> 
+			</div>
+			|
+            
+			<div id="cart">
+				<a href = "cart.html"><img src="images/cart-variant.png"/></a>
+				(<a id="cartnum"></a> items)
+			</div>
+			
+			<br>
+			</br>
+			<nav>
+				<a href="index.html">Home</a>   
+				<a href="shop.html">Shop</a>  
+				<a href="sale.html">Sale</a> 
+				<a href="aboutus.html">About Us</a> 
+				<a href="locations.html">Locations</a> 
+			</nav>
+
+		</header>
+		
+		<!--Sale advertisement-->
+        <div id="salead">
+			<div class="salelist">
+                <h5>FALL SALE  |  NEW COLORS  |  PROMO CODE: LOVEFLUFF</h5>
+				<h8>CLICK TO SHOP</h8>
+            </div>
+		</div>
+		
+
+
+        <div id="incart">
+			<div id = "carttitle">
+				<h2>SHOPPING CART 1 item(s)</h2>
+				<div id = cartitem>
+					<div id = cartpicture>
+						<img src="images/pillow fall.jpeg"/>
+					</div>
+					<div id = itemtext>
+						<h7>
+							Morning Haze Couch Pillow
+						</h7> <br>
+						Color: Morning Haze <br>
+						Size: 18 x 18 <br>
+						Material: Duck Down <br>
+						<br>
+						<div class="product__details__button">
+							<span>Quantity:</span>
+							<input type="number" step="1" min="1" max="24" name="quantity" value="1" title="Qty" class="input-text qty text" id="quant" onchange = "getQuantity()">
+						</div>
+						<br>
+						Price: $29.00
+						<br>
+						<div id=editbutton>
+							EDIT
+						</div>
+					</div>
+				</div>
+			</div>
+            <input type = "text" id="promo" value = "PROMO CODE">
+		</div>
+		<div id=checkout>
+			Total Price: $29.00
+			<button id="checkoutnow">CHECKOUT</button>
+		</div>
+		
+		<script src="main.js"></script>
+    </body>
+
+</html>
