@@ -4,6 +4,7 @@ let counter = 0;
 var cartobj = {totalcart: 0};
 var items_in_cart = 0;
 var chosenColor = "Morning Haze";
+var chosenImage = "images/pillow fall.jpeg";
 
 function clearCart() {
     window.localStorage.clear();
@@ -35,13 +36,21 @@ function getPrice(nameOfCart) {
 function loadCart() {
     let cartList = JSON.parse(window.localStorage.getItem("myPillows")) || [];
     window.localStorage.setItem("myPillows", JSON.stringify(cartList));
-
+    
     document.getElementById("cartnum").innerHTML = findSum(cartList);
     document.getElementById("cartnum2").innerHTML = findSum(cartList);
 
     let tempVar = JSON.parse(localStorage.getItem("myPillows"));
     let showCart = document.getElementById("div-cartitems")
-     
+    if (cartList.length == 0) {
+        let messageContainer = document.createElement("div");
+        messageContainer.className = "card";
+        showCart.appendChild(messageContainer);
+        let noItemsMessage = document.createElement("p");
+        noItemsMessage.className = "noText";
+        noItemsMessage.innerHTML = "There are no items in cart. Go to Shop page!"
+        messageContainer.appendChild(noItemsMessage);
+    }
     for(i = 0; i < tempVar.length; i++) {
         let pillowContainer = document.createElement("div");
         pillowContainer.className = "card";
@@ -115,7 +124,15 @@ function loadCart() {
             i -= 1;
             document.getElementById("totprice").innerHTML = getPrice(tempVar);
             window.localStorage.setItem("myPillows", JSON.stringify(tempVar));
-            
+            if (cartList.length == 0) {
+                let messageContainer = document.createElement("div");
+                messageContainer.className = "card";
+                showCart.appendChild(messageContainer);
+                let noItemsMessage = document.createElement("p");
+                noItemsMessage.className = "noText";
+                noItemsMessage.innerHTML = "There are no items in cart. Go to Shop page!"
+                messageContainer.appendChild(noItemsMessage);
+            }
         }
         let editContainer = document.createElement("div");
         editContainer.className = "edit-div";
@@ -144,7 +161,9 @@ function getMaterial() {
     mat = m.options[m.selectedIndex].text;
     return mat;
 }
-
+function getImage() {
+    return chosenImage;
+}
 function getSize() {
     let s = document.getElementById("size");
     siz = s.options[s.selectedIndex].text;
@@ -160,7 +179,7 @@ addCartButton.onclick = function (e) {
   let newMaterial = getMaterial();
   let newQuantity = getQuantity();
   let newSize = getSize();
-  let imgUrl = "images/pillow fall.jpeg";
+  let imgUrl = getImage();
   const pillow = {
       color: newColor, 
       material: newMaterial, 
@@ -188,7 +207,7 @@ changeBlue.onclick = function (e) {
   let titleText = document.getElementById("shorttitle");
   titleText.innerHTML = "Cozy Denim Couch Pillow";
   chosenColor = "Cozy Denim";
-  
+  chosenImage = "images/pillow dandelion.jpeg";
 };
 
 let changeRed = document.getElementById("changetomorning");
@@ -205,6 +224,7 @@ changeRed.onclick = function (e) {
   let titleText = document.getElementById("shorttitle");
   titleText.innerHTML = "Morning Haze Couch Pillow";
   chosenColor = "Morning Haze";
+  chosenImage = "images/pillow fall.jpeg"
 };
 let changeLightBlue = document.getElementById("changetorainy");
 changeLightBlue.onclick = function (e) {
@@ -219,10 +239,10 @@ changeLightBlue.onclick = function (e) {
   paragraphText.innerHTML = "Designed by Jaden Smith, Rainy Day is inspired by the hope of sunrays after the darkness of rain clouds. We hope to bring a smile to your face";
   let titleText = document.getElementById("shorttitle");
   titleText.innerHTML = "Rainy Day Couch Pillow";
-  chosenColor = "Rainy Day"
+  chosenColor = "Rainy Day";
+  chosenImage = "images/flowerpillow.jpeg"
 };
-
-
+    
 
 // function test() {
 //     console.log("onload triggered");

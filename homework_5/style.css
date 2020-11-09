@@ -270,6 +270,12 @@ h7{
     margin-bottom: 270px;
     margin-right: 40px;
 }
+.noText {
+    margin-left: 140px;
+    text-align: center;
+    color: black;
+    font-size: 42px;
+}
 #promocode {
     display: flex;
     flex-direction: row;
@@ -526,6 +532,7 @@ p {text-align: center;}
 	position: relative;
 	margin-right: 20px;
 }
+
 
 /***********Sample from Lab*************/
 header a {
