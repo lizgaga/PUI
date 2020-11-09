@@ -113,8 +113,9 @@ function loadCart() {
             document.getElementById("cartnum").innerHTML = findSum(tempVar);
             document.getElementById("cartnum2").innerHTML = findSum(tempVar);
             i -= 1;
+            document.getElementById("totprice").innerHTML = getPrice(tempVar);
             window.localStorage.setItem("myPillows", JSON.stringify(tempVar));
-
+            
         }
         let editContainer = document.createElement("div");
         editContainer.className = "edit-div";

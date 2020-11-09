@@ -1,6 +1,6 @@
 
 body {
-    margin: 5;
+    margin: 5px;
     color: grey;
     font-family: 'Roboto', sans-serif;
 }
@@ -25,11 +25,11 @@ footer {
     color: pink;
     font-family: 'Roboto Slab', serif;
     font-size: 24px; 
-    float: center;
+    text-align: center;
  
 }
 footer a{
-    float: center;
+    text-align: center;
     width: 6.75%;
     margin: 90px;
 }
@@ -42,10 +42,9 @@ footer a{
     color: pink;
     font-family: 'Roboto Slab', serif;
     font-size: 24px; 
-    float: center;
 }
 .footerb a{
-    float: center;
+    text-align: center;
     width: 6.75%;
     margin: 90px;
 }
@@ -64,7 +63,7 @@ nav {
     font-size: 24px;
 }
 nav a{
-    float: center;
+    text-align: center;
     width: 6.75%;
     margin: 90px;
 }
@@ -106,7 +105,7 @@ h7{
     color: pink;
     margin-bottom: 20px;
 }
-h8 {
+#h8 {
     color: rgb(255, 94, 0);
     margin-left: 50%;
     text-align: center;
@@ -237,7 +236,6 @@ h8 {
 .div-text {
     display: flex;
     flex-direction: column;
-    position: left;
     justify-content: left;
     max-width: 500px;
     text-align: left;
@@ -253,7 +251,6 @@ h8 {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    position: left;
     justify-content: left;
     max-width: 200px;
     text-align: left;
@@ -261,7 +258,6 @@ h8 {
 .remove-div {
     display: flex;
     flex-direction: column;
-    align-items: right;
     flex-wrap: wrap;
     text-align: right;
     margin-left: 250px;
@@ -270,7 +266,6 @@ h8 {
 .edit-div {
     display: flex;
     flex-direction: row;
-    align-items: right;
     flex-wrap: wrap;
     margin-bottom: 270px;
     margin-right: 40px;
@@ -279,13 +274,11 @@ h8 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: right;
     margin-top: 300px;
 }
 #checkout {
     display: flex;
     flex-direction: row;
-    align-items: right;
     flex-wrap: wrap;
 }
 #totalprice {
@@ -402,19 +395,16 @@ p {text-align: center;}
     width: 110%;
 }
 .Morning {
-    float: center;
     text-align: center;
     margin-left: 10%;
     color: red;
 }
 .Rainy {
-    float: center;
     text-align: center;
     margin-left: 10%;
     color: rgb(0, 195, 255);
 }
 .Cozy {
-    float: center;
     text-align: center;
     margin-left: 10%;
     color: rgb(27, 32, 100);
@@ -463,7 +453,7 @@ p {text-align: center;}
 .product__details__text h3 {
     color: black;
     font-size: 30;
-    float: center
+    text-align: center;
 }
 .product__details__text p {
     color: black;
@@ -483,7 +473,7 @@ p {text-align: center;}
 }
 .product__details__button {
 	overflow: hidden;
-    float:center;
+    position: relative;
     margin-left: 20px;
     
 }
@@ -569,7 +559,7 @@ header a {
 
 /***********Buttons*************/
 button {
-    float: center;
+    position: relative;
     margin-left: 250px;
     border-radius: 10px;
     text-align: center;
@@ -580,7 +570,7 @@ button {
     font-size: 1.2em;
 }
 .removeButton {
-    float: center;
+    position: relative;
     margin-left: 20px;
     border-radius: 10px;
     text-align: center;
