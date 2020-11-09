@@ -10,7 +10,7 @@
 	<title>Fluff Stuff</title>
 		<meta charset="UTF-8">
 	</head>
-	<body onload = "loadCart();">
+	<body onload = "loadCart()">
 		<header>
 			<br>
 			<div id="logo">
@@ -34,7 +34,9 @@
             
 			<div id="cart">
 				<a href = "cart.html"><img src="images/cart-variant.png"/></a>
-				(<a id="cartnum"></a> items)
+				(<a id="cartnum">
+
+				</a> items)
 			</div>
 			
 			<br>
@@ -57,43 +59,33 @@
             </div>
 		</div>
 		
-
-
-        <div id="incart">
-			<div id = "carttitle">
-				<h2>SHOPPING CART 1 item(s)</h2>
-				<div id = cartitem>
-					<div id = cartpicture>
-						<img src="images/pillow fall.jpeg"/>
-					</div>
-					<div id = itemtext>
-						<h7>
-							Morning Haze Couch Pillow
-						</h7> <br>
-						Color: Morning Haze <br>
-						Size: 18 x 18 <br>
-						Material: Duck Down <br>
-						<br>
-						<div class="product__details__button">
-							<span>Quantity:</span>
-							<input type="number" step="1" min="1" max="24" name="quantity" value="1" title="Qty" class="input-text qty text" id="quant" onchange = "getQuantity()">
-						</div>
-						<br>
-						Price: $29.00
-						<br>
-						<div id=editbutton>
-							EDIT
-						</div>
-					</div>
-				</div>
-			</div>
-            <input type = "text" id="promo" value = "PROMO CODE">
-		</div>
-		<div id=checkout>
-			Total Price: $29.00
-			<button id="checkoutnow">CHECKOUT</button>
+		<!---<button type="button" onclick="add_to_cart()">Add to cart!</button> --> 
+		<div>
+			<h2>
+				SHOPPING CART <a id="cartnum2"> </a> item(s)
+			</h2>
 		</div>
 		
+		<div id="div-cartitems" class="container">
+
+
+		</div>
+       
+		<div>
+			<div id = "promocode">
+				<input type = "text" id="promo" value = "PROMO CODE">
+			</div>
+			<div id = "totalprice">
+				<p>
+					Total Price: $<p id = "totprice"></p></p>
+			</div>
+			<div id=checkout>
+				<!-- <button type="button" id = "clearcart" onclick="clearCart()">Clear Cart</button> -->
+				<button id="checkoutnow">CHECKOUT</button>
+			</div>
+		</div>
+		
+	
 		<script src="main.js"></script>
 	</body>
 	
