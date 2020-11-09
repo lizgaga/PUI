@@ -153,7 +153,6 @@ function getSize() {
 let addCart = document.getElementById("addcart");
 addCart.onclick = function (e) {
   e.preventDefault();
-  
   //storing info from cart
   let cartList = JSON.parse(window.localStorage.getItem("myPillows")) || [];
   let newColor = getColor();
@@ -173,10 +172,7 @@ addCart.onclick = function (e) {
 
     document.getElementById("cartnum").innerHTML = findSum(cartList);
     let tempVar = JSON.parse(localStorage.getItem("myPillows"));
-    for(i = 0; i < tempVar.length; i++) {
-        let item = tempVar[i];
-        console.log("This is the cart item" + item);
-    }
+    
 
   document.getElementById("cartnum").innerHTML = findSum(cartList);
 }
@@ -225,7 +221,7 @@ changeLightBlue.onclick = function (e) {
   titleText.innerHTML = "Rainy Day Couch Pillow";
   chosenColor = "Rainy Day"
 };
-window.load=doShowAll();
+
 
 
 // function test() {

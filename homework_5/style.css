@@ -183,6 +183,9 @@ h8 {
     clear: both;
     display: table;
   }
+.row img{
+    width: 100%;
+}
 /* Centered text */
 .centered {
     position: absolute;
@@ -213,7 +216,7 @@ h8 {
     height: 380px;
     margin-left: 100px;
     margin-top: 40px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .cartimage {
@@ -228,7 +231,7 @@ h8 {
     flex-wrap: wrap;
     text-align: left;
     margin-left: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 400px;
 }
 .div-text {
@@ -341,7 +344,9 @@ h8 {
     top: 50%;
     left: 50%;
 }
-  
+.content img {
+    width: 100%;
+}
 p {text-align: center;}
 
 
@@ -353,6 +358,9 @@ p {text-align: center;}
     margin-left: 15px;
     top: 50%;
     left: 50%;
+}
+.step1 img {
+    width: 50%;
 }
 .p2 {
     float: left;
@@ -389,6 +397,9 @@ p {text-align: center;}
     padding: 10px;
     display: inline-block;
     transform: translate(-10%, -10%);
+}
+.step2 img {
+    width: 110%;
 }
 .Morning {
     float: center;
