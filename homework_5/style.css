@@ -33,6 +33,22 @@ footer a{
     width: 6.75%;
     margin: 90px;
 }
+.footerb {
+    text-align: center;
+    margin-top: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: darkgrey;
+    color: pink;
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px; 
+    float: center;
+}
+.footerb a{
+    float: center;
+    width: 6.75%;
+    margin: 90px;
+}
 nav {
     text-align: center;
     padding: 10px;
@@ -501,8 +517,8 @@ p {text-align: center;}
 	font-weight: 600;
 	color: #111111;
 	width: 150px;
-	float: left;
 }
+
 .colorpicker__checkbox label {
 	display: inline-block;
 	cursor: pointer;

@@ -34,27 +34,15 @@ function getPrice(nameOfCart) {
 }
 function loadCart() {
     let cartList = JSON.parse(window.localStorage.getItem("myPillows")) || [];
-    window.console.log("hello again");
-    window.console.log(typeof(cartList) + ";" + cartList);
-
-    window.console.log(typeof(cartList) + ";" + cartList);
-    window.console.log(typeof(cartList) + ";" + JSON.stringify(cartList));
     window.localStorage.setItem("myPillows", JSON.stringify(cartList));
-    
-    
+
     document.getElementById("cartnum").innerHTML = findSum(cartList);
     document.getElementById("cartnum2").innerHTML = findSum(cartList);
-    //cartList = JSON.parse(window.localStorage.getitem("myPillows"));    
-  //  document.getElementById("cartnum").innerHTML = cartList.length;
+
     let tempVar = JSON.parse(localStorage.getItem("myPillows"));
     let showCart = document.getElementById("div-cartitems")
-    tempI = 0;
+     
     for(i = 0; i < tempVar.length; i++) {
-        console.log(tempVar);
-        let item = cartList[i];
-        console.log(item.color);
-        console.log("This is the cart item" + item);
-        window.alert("Hi I am alerting you");
         let pillowContainer = document.createElement("div");
         pillowContainer.className = "card";
         showCart.appendChild(pillowContainer);
@@ -63,7 +51,6 @@ function loadCart() {
         let img = document.createElement("img");
         imgContainer.className = "cartimage";
         img.src = tempVar[i].img;
-        window.console.log(img.src);
         img.width = 300;
         img.height = 300;
         imgContainer.appendChild(img);
@@ -112,7 +99,6 @@ function loadCart() {
         priceText.innerHTML = "Price: $" + priceNum;
         divTextContainer.appendChild(priceText);
 
-       
         let deleteContainer = document.createElement("div");
         deleteContainer.className = "remove-div";
         pillowContainer.appendChild(deleteContainer);
@@ -120,12 +106,10 @@ function loadCart() {
         myButtonVariable.className = "removeButton";
         myButtonVariable.textContent = "Remove";
         deleteContainer.appendChild(myButtonVariable);
-        //Reset cart
-        
+        //Reset cart item
         myButtonVariable.onclick = function() {
             pillowContainer.remove();
             tempVar.splice(i - 1, 1);
-            window.console.log("here it is" + tempVar);
             document.getElementById("cartnum").innerHTML = findSum(tempVar);
             document.getElementById("cartnum2").innerHTML = findSum(tempVar);
             i -= 1;
@@ -143,9 +127,6 @@ function loadCart() {
     let priceCart = JSON.parse(localStorage.getItem("myPillows"));
     document.getElementById("totprice").innerHTML = getPrice(priceCart);
    
-
-    // let currentcart = document.getElementById("cartnum");
-    // currentcart.innerHTML = cartobj.totalcart;
 }
 
 function getQuantity() {
@@ -188,17 +169,13 @@ addCart.onclick = function (e) {
       img: imgUrl,
     };
     cartList.push(pillow);
-    window.console.log(typeof(cartList) + ";" + cartList);
-    window.console.log(typeof(cartList) + ";" + JSON.stringify(cartList));
     window.localStorage.setItem("myPillows", JSON.stringify(cartList));
 
     document.getElementById("cartnum").innerHTML = findSum(cartList);
     let tempVar = JSON.parse(localStorage.getItem("myPillows"));
     for(i = 0; i < tempVar.length; i++) {
-        console.log(tempVar);
         let item = tempVar[i];
         console.log("This is the cart item" + item);
-        window.alert("Hi I am alerting you");
     }
 
   document.getElementById("cartnum").innerHTML = findSum(cartList);
