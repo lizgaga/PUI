@@ -151,8 +151,8 @@ function getSize() {
     return siz;
 }
 //When the add to cart button is clicked on in the product details page
-let addCart = document.getElementById("addcart");
-addCart.onclick = function (e) {
+let addCartButton = document.getElementById("addcart");
+addCartButton.onclick = function (e) {
   e.preventDefault();
   //storing info from cart
   let cartList = JSON.parse(window.localStorage.getItem("myPillows")) || [];
@@ -174,7 +174,6 @@ addCart.onclick = function (e) {
     document.getElementById("cartnum").innerHTML = findSum(cartList);
     let tempVar = JSON.parse(localStorage.getItem("myPillows"));
     
-
   document.getElementById("cartnum").innerHTML = findSum(cartList);
 }
 let changeBlue = document.getElementById("changetocozy");
