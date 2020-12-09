@@ -161,12 +161,26 @@ h7{
 .text-block {
     position: absolute;
     bottom: 20px;
-    right: 20px;
+    right: 500px;
     background-color: black;
     color: white;
     padding-left: 20px;
+    padding-right: 50px;
+}
+.icon {
+    position: absolute;
+    top: 40px;
+    right: 500px;
     padding-right: 20px;
-  }
+    padding-left: 20px;
+    
+
+}
+.icon img {
+    height: 50px;
+    width: 50px;
+}
+
 
 /******* Cart Page **********/
 .div-cartitems {
