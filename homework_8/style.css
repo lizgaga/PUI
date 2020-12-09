@@ -1,0 +1,213 @@
+
+body {
+    margin: 5px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*********** HEADER ************/
+
+header {
+    padding-top: 20px;
+    text-align: center;
+    background-color: rgb(251,252,255);
+}
+#logo a{
+    color: black;
+    font-size: 60px;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: rgb(251,252,255);
+    color: black;
+    font-family: 'Roboto Slab';
+    font-size: 24px;
+}
+nav a{
+    text-align: center;
+    margin: 140px;
+    color: black;
+}
+.category {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+}
+
+#logo {
+    text-align: center;
+    color: black;
+    font-family: 'Tangerine', serif;
+    font-size: 42px;
+    margin-left: 150px;
+    display: inline-block;
+    width: 60%;
+}
+#insta {    
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#insta img[src="images/instagram logo.png"]{
+    width: 45px;
+    height: 45px;
+    margin-bottom: -3px;
+}
+#fb {
+    display: inline-block;
+}
+#fb img {
+    width: 40px;
+    height: 40px;
+    margin-left: 50px;
+}
+
+h1 {
+    font-family: 'Parisienne', serif;
+    color: black;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+h3 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-family: 'Roboto Slab', serif;
+}
+h4 {
+    color: rgb(196, 95, 112);
+    margin-left: 50px;
+    font-size: 36px;
+    font-family: 'Tangerine', serif;
+    margin-bottom: 0;
+}
+h6 {
+    color: black;
+    margin-top:0;
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+h5 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto Slab', serif;
+}
+h7{
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    color: pink;
+    margin-bottom: 20px;
+}
+#h8 {
+    color: rgb(255, 94, 0);
+    margin-left: 50%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+/******* Home Page ***********/
+#banner {
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+    background-color: rgb(206,205,255);
+    color: rgb(251,252,255);
+    padding-left:30px;
+
+}
+.btn-block {
+    display: block;
+}
+#sections1 {
+    height: 750px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#sections2 {
+    height: 750px;
+}
+#sections3 {
+    height: 750px;
+}
+#sections4 {
+    height: 750px;
+}
+
+/******* Doll Page **********/
+#preview {
+    background-color: black;
+}
+#large {
+    height: 760px;
+}
+#large img{
+    height: 750px;
+    margin-left: 25%;
+}
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+/******* Cart Page **********/
+.div-cartitems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(248, 247, 247);
+    width: 85%;
+    height: 380px;
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.cartimage {
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+}
+.cart-flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+
+
+
+
+/***********Buttons*************/
+
