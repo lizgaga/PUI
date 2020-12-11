@@ -22,9 +22,7 @@
 		<script src="main.js" type="text/javascript"></script>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-		<!--Anime.js-->
-		<script src= "https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
-
+	
 	</head>
 	<body>
 		<header>
@@ -61,70 +59,24 @@
 				</div>
 			
 			</div>
-		</div>
-		
-
+        </div>
         <div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-12">
-                    <div id = "preview">
-                        <div class = "icon">
-                            <img onclick = "showInfo()" id = "iconimage" src = "images/infoicon.png" alt = "info">
-                            <div class="text-block" id="textbox">
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class = "icon2">
-                            <img onclick = "changeImage()" src = "images/icon2.png" alt = "2nd">
-                        </div>
-                        <div class = "icon3">
-                            <img onclick = "lastImage()" src = "images/icon3.png" alt = "3rd">
-                        </div>
-                        <div id = "large">
-                                <img class = "w3-animate-opacity" id = "currentDoll" src="images/doll1.jpeg" alt="Design">
-                                <div class = "w3-animate-opacity">
-                                    <div class="text-block">
-                                        <p>This is the outer layer of the artwork.</p>
-                                    </div>
-                                </div>
-                                
-                                
-                        </div>
+				<div class="col-sm-8">
+                    <img src="images/leaves copy.jpg" alt="leaves">
+
                         
+                
+                </div>
+                <div class="col-sm-4">
+                    
                         
-                    </div>
-					
+                
 				</div>
 			
 					
 				
 			</div>
 		</div>
-		<div class = "container-fluid">
-			<div class="col-sm-12">
-				<div id = "banner">
-				</div>
-			</div>
-		</div>
-		<div class = "animsquare">
-			<div class="text-block" id="textbox">
-				<p>Hellooooo</p>
-			</div>
-		</div>
-		<script src="/anime.min.js"></script>
-		<script>
-			anime({
-				targets: '.animsquare',
-				keyframes: [
-				{translateX: 250},
-				{translateX: 0},
-				{translateY: 0}
-				],
-				duration: 4000,
-				easing: 'easeOutElastic(1, .8)',
-				loop: true
-			});
-		</script>
-			
     </body>
 </html>

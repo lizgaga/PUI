@@ -148,6 +148,9 @@ h7{
 }
 
 /******* Doll Page **********/
+.animsquare {
+    
+}
 #preview {
     background-color: black;
 }
@@ -173,14 +176,35 @@ h7{
     right: 500px;
     padding-right: 20px;
     padding-left: 20px;
-    
-
 }
+
 .icon img {
     height: 50px;
     width: 50px;
 }
 
+.icon2 {
+    position: absolute;
+    top: 300px;
+    right: 500px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.icon2 img {
+    height: 45px;
+    width: 45px;
+}
+.icon3 {
+    position: absolute;
+    top: 600px;
+    right: 900px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.icon3 img {
+    height: 45px;
+    width: 45px;
+}
 
 /******* Cart Page **********/
 .div-cartitems {
