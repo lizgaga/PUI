@@ -15,6 +15,7 @@ header {
 #logo a{
     color: black;
     font-size: 60px;
+    font-family: 'Parisienne';
 }
 
 nav {
@@ -53,7 +54,7 @@ nav a{
     margin-left: 50px;
 }
 
-#insta img[src="images/instagram logo.png"]{
+#insta img{
     width: 45px;
     height: 45px;
     margin-bottom: -3px;
@@ -78,7 +79,7 @@ h2 {
 }
 h3 {
     text-align: center;
-    color: white;
+    color: grey;
     font-size: 32px;
     font-family: 'Roboto Slab', serif;
 }
@@ -148,9 +149,7 @@ h7{
 }
 
 /******* Doll Page **********/
-.animsquare {
-    
-}
+
 #preview {
     background-color: black;
 }

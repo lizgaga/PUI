@@ -10,21 +10,28 @@
     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 		<!-- styles -->
-		<link rel="stylesheet" type="text/css" href="/Assets/style.css">
-		<!-- fonts -->
+		<link rel="stylesheet" type="text/css" href="Assets/style.css">
+        <link rel="stylesheet" type="text/css" href="/Assets/green-audio-player.css">
+
+        <!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
 		
-
+		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,500;1,900&display=swap" rel="stylesheet">
 		
 		<!--JavaScript-->
 		<script src="Assets/main.js" type="text/javascript"></script>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
 
-	
+		<!--Anime.js-->
+		<script src= "https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
 	</head>
 	<body>
+        <audio id = "myAudio">
+            <source src="/Assets/audio/Sound_of_Time_Moving_original_composition.mp3" type="audio/mpeg">
+        </audio>
 		<header>
 			<div id="logo">
 				<h1>
@@ -59,26 +66,34 @@
 				</div>
 			
 			</div>
-		</div>
-		
-	
-        <div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-8">
-                    <img src="Assets/images/leaves copy.jpeg" alt="leaves">
-
-                        
-                
+        </div>
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col-sm-4">
+                    <h3>
+                        Sound of Time Moving
+                    </h3>
+                    <p>
+                        I wrote this piano piece to make the feeling of how time feels to me. It feels peaceful, dramatic at times, but light in the end. 
+                    </p>
                 </div>
-                <div class="col-sm-4">
-                    
-                        
-                
-				</div>
-			
-					
-				
-			</div>
-		</div>
+                <div class = "col-sm-8">
+                    <button onclick="playAudio()" type="button">Play Audio</button>
+                    <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+                    <div class = "music1">
+                        <audio crossorigin preload="none">
+                            <source src="/Assets/audio/Sound_of_Time_Moving_original_composition.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/Assets/green-audio-player.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.music1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+             });
+        </script>
     </body>
+
 </html>
