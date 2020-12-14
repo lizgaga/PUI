@@ -1,5 +1,5 @@
-
 /** HomePage **/
+/** Hover Text and Image Changes **/
 function showDesign(){
     let currentDesign = document.getElementById("sections1");
     currentDesign.setAttribute("src", "Assets/images/leaves copy.jpeg");
@@ -49,6 +49,10 @@ function hideMusic(){
     let textD = document.getElementById("blankmusic");
     textD.innerHTML = "";
 }
+
+
+/** Doll Page **/
+/** Textbox Animations **/
 function showInfo(){
     let textD = document.getElementById("textbox");
     textD.innerHTML = "This artwork is a digital piece that I made to express how people hides their true self inside while they are handling anxiety. The first drawing is a doll, which is forced to smile, like how society wants to see that person.";
