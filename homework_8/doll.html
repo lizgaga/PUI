@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Angela Guo</title>
+		<title>Fine Arts: Doll</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--Bootstrap-->
@@ -54,7 +54,8 @@
 				<div class="col-sm-12">
 					<div id = "banner">
 						<h2>
-							Industrial designer at the intersection of animation and technology.
+							Click on the icons to interact with Angela's art piece. Learn what each layer represents.
+							Recommended for viewing on wider screens.
 						</h2>
 					</div>
 				</div>
@@ -68,7 +69,7 @@
                         <div class = "icon">
                             <img onclick = "showInfo()" id = "iconimage" src = "Assets/images/infoicon.png" alt = "info">
 							<div class = "animsquare">
-								<div class="text-block" id="textbox">
+								<div class="text-block" id = "textbox">
 									<p></p>
 								</div>
 							</div>
@@ -76,15 +77,26 @@
                         </div>
                         <div class = "icon2">
                             <img onclick = "changeImage()" src = "Assets/images/icon2.png" alt = "2nd">
-                        </div>
+							<div class = "animsquare1">
+								<div class="text-block2" id = "textbox2">
+									<p></p>
+								</div>
+							</div>
+						</div>
                         <div class = "icon3">
                             <img onclick = "lastImage()" src = "Assets/images/icon3.png" alt = "3rd">
-                        </div>
+							<div class = "animsquare2">
+
+								<div class="text-block3" id = "textbox3">
+									<p></p>
+								</div>
+							</div>
+						</div>
                         <div id = "large">
                                 <img class = "w3-animate-opacity" id = "currentDoll" src="Assets/images/doll1.jpeg" alt="Design">
                                 <div class = "w3-animate-opacity">
-                                    <div class="text-block">
-                                        <p>This is the outer layer of the artwork.</p>
+                                    <div class="text-block1">
+                                        <p>"Inside" by Angela Guo.</p>
                                     </div>
                                 </div>
                                 
@@ -109,17 +121,37 @@
 		
 		<script src="/anime.min.js"></script>
 		<script>
-			anime({
+			var animeBox = anime({
 				targets: '.animsquare',
 				keyframes: [
-				{translateX: 250},
-				{translateX: 0},
-				{translateY: 0}
+				{translateX: -300},
+				{translateY: 0},
 				],
 				duration: 4000,
 				easing: 'easeOutElastic(1, .8)',
-				loop: true
 			});
+			document.querySelector('.icon').onclick = animeBox.restart;
+			var moveBox = anime({
+				targets: '.animsquare1',
+				keyframes: [
+				{translateX: -300},
+				{translateY: 0},
+				],
+				duration: 4000,
+				easing: 'easeOutElastic(1, .8)',
+			});
+			document.querySelector('.icon2').onclick = moveBox.restart;
+			var leftBox = anime({
+				targets: '.animsquare2',
+				keyframes: [
+				{translateX: -600},
+				{translateY: 0},
+				],
+				duration: 4000,
+				easing: 'easeOutElastic(1, .8)',
+			});
+			document.querySelector('.icon3').onclick = leftBox.restart;
+
 		</script>
 			
     </body>

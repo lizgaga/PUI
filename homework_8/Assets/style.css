@@ -9,6 +9,7 @@ body {
 
 header {
     padding-top: 20px;
+    margin-right: -15px;
     text-align: center;
     background-color: rgb(251,252,255);
 }
@@ -16,6 +17,7 @@ header {
     color: black;
     font-size: 60px;
     font-family: 'Parisienne';
+    text-align: center;
 }
 
 nav {
@@ -45,7 +47,7 @@ nav a{
     color: black;
     font-family: 'Tangerine', serif;
     font-size: 42px;
-    margin-left: 150px;
+    margin-left: 130px;
     display: inline-block;
     width: 60%;
 }
@@ -78,59 +80,64 @@ h2 {
     font-family: 'Roboto', sans-serif;
 }
 h3 {
+    padding-top: 30px;
     text-align: center;
-    color: grey;
+    color: white;
     font-size: 32px;
     font-family: 'Roboto Slab', serif;
 }
 h4 {
+    padding-top: 30px;
+    text-align: right;
     color: rgb(196, 95, 112);
-    margin-left: 50px;
     font-size: 36px;
     font-family: 'Tangerine', serif;
     margin-bottom: 0;
 }
 h6 {
-    color: black;
-    margin-top:0;
-    display: block;
-    font-family: 'Roboto Slab', serif;
-    font-size: 18px;
+    padding-top: 30px;
+    text-align: center;
+    color: rgb(196, 95, 112);
+    font-size: 36px;
+    font-family: 'Tangerine', serif;
+    margin-bottom: 10px;
 }
 h5 {
     color: white;
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     font-family: 'Roboto Slab', serif;
 }
 h7{
     font-family: 'Roboto Slab', serif;
-    font-size: 24px;
-    color: pink;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
     margin-bottom: 20px;
 }
-#h8 {
-    color: rgb(255, 94, 0);
-    margin-left: 50%;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-}
+
 
 /******* Home Page ***********/
 #banner {
     padding-top: 100px;
     text-align: center;
+    margin-right:-15px;
     padding-bottom: 100px;
     background-color: rgb(206,205,255);
     color: rgb(251,252,255);
-    padding-left:30px;
+    padding-left:50px;
 
 }
+.lastviolin {
+    margin-right: -80px;
+    overflow: hidden;
+}
+
 .btn-block {
     display: block;
 }
 #sections1 {
     height: 750px;
+
 }
 .centered {
     position: absolute;
@@ -140,16 +147,19 @@ h7{
 }
 #sections2 {
     height: 750px;
+
 }
 #sections3 {
     height: 750px;
+
 }
 #sections4 {
     height: 750px;
+   
+
 }
 
 /******* Doll Page **********/
-
 #preview {
     background-color: black;
 }
@@ -158,12 +168,47 @@ h7{
 }
 #large img{
     height: 750px;
-    margin-left: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .text-block {
     position: absolute;
-    bottom: 20px;
-    right: 500px;
+    top: 30px;
+    right: -800px;
+    width: 400px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+.text-block1 {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    width: 350px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.text-block2 {
+    position: absolute;
+    top: 70px;
+    right: -700px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+.text-block3 {
+    position: absolute;
+    top: -70px;
+    right: -1000px;
+    width: 325px;
     background-color: black;
     color: white;
     padding-left: 20px;
@@ -185,7 +230,7 @@ h7{
 .icon2 {
     position: absolute;
     top: 300px;
-    right: 500px;
+    right: 400px;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -196,7 +241,7 @@ h7{
 .icon3 {
     position: absolute;
     top: 600px;
-    right: 900px;
+    right: 400px;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -205,46 +250,51 @@ h7{
     width: 45px;
 }
 
-/******* Cart Page **********/
-.div-cartitems {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
+
+/***********Fine Arts Page*************/
+/***Using Bootstrap to Format gallery****/
+.gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 50%;
+    -moz-column-width: 50%;
+    column-width: 50%; 
 }
 
-.card {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    background-color: rgb(248, 247, 247);
-    width: 85%;
-    height: 380px;
-    margin-left: 100px;
-    margin-top: 40px;
-    margin-bottom: 100px;
+/***********Music Page*************/
+.music1 {
+    margin-top: 70px;
+}
+.txtbox {
+    text-align: center;
+    float: right;
+    width: 350px;
 }
 
-.cartimage {
-    width: 300px;
-    height: 300px;
-    margin-left: 30px;
-}
-.cart-flexbox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
+/*********About Page*************/
+.abouttxt {
+    padding-top: 40px;
+    margin-right:-40px;
     text-align: left;
-    margin-left: 60px;
-    margin-bottom: 20px;
-    width: 400px;
+    width: 100%;
+}
+.abouttxt p{
+    color: rgb(82, 82, 82);
+    font-size: 24px;
+    font-family: 'Roboto Slab', serif;
+}
+.yellow {
+    width: 100%;
+    background-color: white;
+
 }
 
+.yellow img {
+    width: 100%;
+}
 
-
-
-
-/***********Buttons*************/
-
+#paleyellow {
+    background-color: rgb(255, 253, 121);
+    width: 103%;
+}
