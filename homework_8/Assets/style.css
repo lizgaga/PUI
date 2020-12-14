@@ -285,7 +285,6 @@ h7{
     background-color: white;
 
 }
-
 .yellow img {
     width: 100%;
 }
@@ -293,4 +292,22 @@ h7{
 #paleyellow {
     background-color: rgb(255, 253, 121);
     width: 103%;
+}
+
+/*********Design Page*************/
+#designpg img {
+    width: 100%;
+    margin-left:15px;
+}
+/**** Buttons *****/
+.button {
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 80px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-size: 32px;
+    margin: 125px;
 }
